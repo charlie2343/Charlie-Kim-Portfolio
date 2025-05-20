@@ -1,7 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
+  
 }
+h1, p {
+  position: relative;
+  z-index: 1;
+  color: black; /* or any color that stands out */
+  padding: 1rem;
+}
+
+
 canvas {
   display: block;
 }
