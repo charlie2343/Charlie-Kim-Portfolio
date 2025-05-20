@@ -67,7 +67,9 @@ function setup() {
   //randomSeed(4);
   startColor = color(random(0,255), random(0,255) ,random(0,255));
   //createCanvas(400, 400);
-  createCanvas(windowWidth, windowHeight);
+  let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.position(0, 0);
+  cnv.style('z-index', '-1');
  size = width/2
   c1 = new Circle(-1 / (width/2), width/2, height/2, startColor);
   //create 3 random mutually tangent circle
